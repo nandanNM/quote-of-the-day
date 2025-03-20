@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1544137105-295758788545?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.quote-box {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.quote-content {
+  margin-bottom: 20px;
+}
+
+.quote {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.author {
+  font-size: 18px;
+  color: #666;
+  font-style: italic;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.new-quote {
+  background-color: #4caf50;
+  color: white;
+}
+
+.copy {
+  background-color: #2196f3;
+  color: white;
+}
+
+.tweet {
+  background-color: #1da1f2;
+  color: white;
+}
+
+.export {
+  background-color: #9c27b0;
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .quote {
+    font-size: 18px;
+  }
+
+  .author {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
